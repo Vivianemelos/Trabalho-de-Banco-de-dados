@@ -1,0 +1,31 @@
+Instituto de Informática
+Banco de Dados, 2020/1
+Projeto de Banco de Dados
+
+1. Tema:
+Livraria.
+
+2. Grupo:
+Viviane Sousa
+
+3. Descrição:
+      O banco de dados é sobre o gerenciamento de uma livraria(presencial). Têm como usuários clientes, caixas, atendentes e gerentes. Será permitido fazer  um auto atendimento na loja, por parte do cliente, através de um computador. A livraria contém os seguintes itens de venda: livros, mangás e revistas.
+O cliente pode comprar os produtos e fazer reserva deles. É mantido um cadastro do cliente, e nele consta dados do nome, cpf, rg, onde cpf e rg são unicos, data de nascimento e sexo. A reserva  tem os seguintes dados:  identificador da reserva e a data que foi efetuada. Ela pode ser feita por telefone ou pessoalmente(ambas feita pelo caixa da loja).
+O atendente fica responsável por auxiliar o cliente na loja, verificando preço e disponibilidade; caso não tenha produtos no estoque, ele deve informar ao gerente para o repor. Os dados do atendente sao: nome, sexo, id(unico). 
+O caixa fica responsável por registrar a venda. Ele que vai cobrar o valor, registrar o produto e retirar o item do estoque. Também, durante a compra, ele registra o atendente que ficou responsável por ajudar o cliente,caso houver. Seus dados necessarios sao: nome, id(unico) e sexo. 
+ O gerente fica responsável pela parte das promoções, as metas dos atendentes. Ele pode oferecer descontos em certos tipos de produtos. Pode também informar qual atendente atingiu uma meta X no mês. Seus dados necessarios sao: nome, id(unico) e sexo. A meta é calculada de acordo com a soma de vendas que o vendedor participou. Por exemplo, se a meta valer 30,00: é feita a soma dos preços de todos os produtos que ele auxiliou o cliente a comprar e verifica se é maior que 30,00.
+Os dados comuns dos produtos são: nome, descrição, editora, gênero,  quantidade disponível no estoque, preço, número de páginas e código(único), número(volume), idioma, ano de lançamento. Livro e mangás possuem autor(es). Revista possui issn, ano e edição, livro tem isbn. Manter dados sobre a data da venda do produto. 
+No autoatendimento o cliente vai poder consultar o produto que desejar e que estiver disponível.
+As formas de pagamento aceitas são: cartão de crédito(1 parcela), débito e à vista.
+
+
+3. Glossário:
+ISSN: sigla em inglês para Número Internacional Normalizado para Publicações Seriadas, é o código aceito internacionalmente para individualizar o título de uma publicação seriada;
+ISBN: é um sistema internacional de identificação de livros e softwares que utiliza números para classificá-los por título, autor, país, editora e edição;
+
+
+4. Usuários:
+Cliente: efetua a compra e reserva de livros, revistas e/ou mangas. A reserva pode ser feita por telefone ou pessoalmente. Ele pode consultar o produto numa tela disponível na loja.
+Atendente: auxilia o cliente a escolher o produto desejado consultando a disponibilidade, o preço. Dá os dados do cliente para finalizar a compra. E caso não haja estoque, informa ao gerente.
+Caixa:  Efetua a compra desejada do cliente. Cobra o preço do cliente e retira o produto comprado do estoque. Registra o atendente que auxiliou o cliente, se houver.
+Gerente: é responsável pela parte das promoções e metas dos atendentes. Pode fornecer descontos em alguns produtos. 
